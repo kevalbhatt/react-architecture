@@ -1,0 +1,43 @@
+.scrollable-tabs-container{
+    width: 100%;
+    padding: 20px 0;
+    position: relative;
+}
+.scrollable-tabs-container .scrollable-tabs-scroller {
+    position: absolute;
+    top: 24px;
+    width: 40px;
+    height: 40px;
+    background-color: #1ab394;
+    text-align: center;
+    line-height: 28px;
+    cursor: pointer;
+    color: #fff;
+}
+.scrollable-tabs-container .scrollable-tabs-scroller.left {
+    left: 0;
+}
+.scrollable-tabs-container .scrollable-tabs-scroller.right {
+    right: 0;
+}
+.scrollable-tabs-container ol{
+    white-space: nowrap;
+    overflow: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 2px 0;
+}
+.scrollable-tab{
+    background-color: #fff;
+    border: 1px solid #1ab394;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 10px;
+    margin: 2px;
+    cursor: pointer;
+}
+.scrollable-tab.isActive{
+    background-color: #1ab394;
+    color: #fff;
+}
+.scrollable-tabs-container ol::-webkit-scrollbar { display: none; }
